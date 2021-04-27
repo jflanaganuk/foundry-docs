@@ -1,0 +1,41 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import Beyond20Extension from './assets/beyond20extension.png';
+import FeaturesAndTraits from './assets/featuresAndTraits.png';
+import FeaturesAndTraitsSuccess from './assets/featuresAndTraitsSuccess.png';
+
+import Example from './assets/example.mp4';
+
+import "./style.css";
+
+<Meta title="Foundry VTT/Beyond 20 Installation" />
+
+# Using Beyond20 with FoundryVTT
+
+### Installing
+
+ - Install Beyond20 for [**Chrome**](https://chrome.google.com/webstore/detail/beyond-20/gnblbpbepfbfmoobegdogkglpbhcjofh) or [**Firefox**](https://addons.mozilla.org/en-GB/firefox/addon/beyond-20/)
+
+Beyond20 makes it easy to use your DnDBeyond character inside of FoundryVTT without the need to import and manage your character in two places.
+
+Here is an example of it in action:
+<video src={Example} width={"100%"} controls/>
+
+### Connecting to Foundry
+
+ - Simply open up [**Foundry**](https://www.uploadr.co.uk:30000/join) and log in to your character
+ - Next, click the Beyond20 extension in the top right of your browser
+ - Thats it! You can now proceed to connecting to DnDBeyond
+
+<img src={Beyond20Extension} />
+
+### Connecting to DnDBeyond
+
+ - In another tab open up [**DnDBeyond**](https://ddb.ac) and navigate to your character
+ - You may get a warning about opening up "Features and Traits" if this is the first time using your character
+    - Simply opening that tab like Beyond20 is asking will fix the issue
+
+<img src={FeaturesAndTraits} />
+
+ - Now you should be able to click your character sheet in DnDBeyond and your rolls will appear in Foundry!
+
+<img src={FeaturesAndTraitsSuccess} />

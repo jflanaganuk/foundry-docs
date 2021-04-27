@@ -1,0 +1,89 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+import AbilityCheck from './assets/abilityCheck.png';
+import SavingThrow from './assets/savingThrow.png';
+import AdditionalCheck from './assets/additionalCheck.png';
+import Normal from './assets/normal.png';
+import Advantage from './assets/advantage.png';
+import Disadvantage from './assets/disadvantage.png';
+import Initiative from './assets/initiative.png';
+import UseDnDBeyond from './assets/usedndbeyond.png';
+import RollType from './assets/rolltype.png';
+import GenericIcon from './assets/genericIcon.png';
+import GenericRoll from './assets/genericRoll.png';
+
+import "./style.css";
+
+<Meta title="Foundry VTT/Rolling Dice" />
+
+# Rolling Dice
+
+### Rolling to make an ability check
+
+ - Simply click along the top for the main 6 abilities to roll them when asked
+
+<img src={AbilityCheck}/>
+
+ - If asked instead to make a "saving throw" click the abilities to the top left of your sheet
+
+<img src={SavingThrow}/>
+
+ - For more specific ability checks, they are towards the centre
+
+<img src={AdditionalCheck}/>
+
+### Rolling with advantage and disadvantage
+
+<img src={Normal}/>
+
+ - For advantage, simply hold down "shift" before hovering over your desired roll, the icon will change to a green die with a plus on it
+ 
+<img src={Advantage}/>
+
+ - For disadvantage, hold down "ctrl" before hovering over your desired roll, the icon will change to a red die with a minus on it
+
+<img src={Disadvantage}/>
+
+### Rolling for initiative
+
+ - Simply click the initiative on your DnDBeyond character sheet
+ - Do not do this before your DM has told you to go as they have to make sure the combat tracker is listening for rolls
+ - NOTE: You must have your character selected in FoundryVTT
+
+<img src={Initiative}/>
+
+### Bonus: Making your rolls appear in DnDBeyond once again
+
+You may have noticed that doing the above stops your rolls appearing in DnDBeyond, to fix this:
+
+ - Navigate to the tab containing Foundry or your DnDBeyond Character
+ - Open up the extension by clicking the Beyond20 icon in the top right of your browser
+ - Click the option called "Use D&D Beyond's digital dice"
+
+<img src={UseDnDBeyond}/>
+
+### Public, Private and Blind rolls
+
+Beyond20 will respect what ever you set the rolls dropdown to in FoundryVTT.
+
+A quick breakdown of each roll type:
+ - Public, everyone at the table will see your roll
+ - Private, only you and the DM will see your roll
+ - Blind, only the DM will see your roll
+ - Self, only you will see your roll (useful for testing)
+
+<img src={RollType}/>
+
+### Generic Rolling
+
+Occasionally you may be asked to roll dice that do not correspond to a weapon/spell or ability.
+
+ - To do this, click the icon in the bottom left of your DnDBeyond Character sheet
+
+<img src={GenericIcon}/>
+
+ - Here you can queue up the amount of dice you want to roll and what type
+
+<img src={GenericRoll}/>
+
+ - After rolling, the results will appear inside FoundryVTT like usual
