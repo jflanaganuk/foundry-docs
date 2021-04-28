@@ -1,0 +1,56 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+import Whisper from './assets/whisper.png';
+import WhisperDropdown from './assets/whisperDropdown.png';
+
+import "./style.css";
+
+<Meta title="Foundry VTT/Using Chat" />
+
+# Using chat in FoundryVTT
+
+## Whispering to the DM
+
+To whisper to the DM type:
+
+```
+/w GM <your message>
+```
+
+A whisper should appear as:
+
+<img src={Whisper}/>
+
+## Whispering to other players
+
+To whisper to other players:
+
+```
+/w [<the player you want to whisper too>] <your message>
+```
+
+eg. to whisper to "John Smith" that he smells type:
+
+```
+/w [john smith] you smell
+```
+
+## Tip: Easier Whispering
+
+After you type
+
+```
+/w
+```
+
+and hit `<space>` an auto complete box will popup.
+
+<img src={WhisperDropdown}/>
+
+You can then start typing the player's name and hit `<tab>` to autocomplete the prompt.
+
+It should appear as:
+
+```
+/w [player's name]
+```
