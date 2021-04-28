@@ -102,9 +102,10 @@
 
 .coverImage {
   position: absolute;
+  top: 0;
   left: 0;
 
-  width: 98vw;
+  width: 100vw;
   height: 300px;
 
   background-size: cover;
@@ -113,8 +114,9 @@
   filter: brightness(50%);
 }
 
-.coverTitle {
-  top: 0;
+div.coverTitle {
+  position: relative;
+  top: -4rem;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -123,7 +125,13 @@
 
 .coverTitle h1 {
   color: white;
-  font-size: 3rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+  .coverTitle h1 {
+    font-size: 3rem;
+  }
 }
 
 img {

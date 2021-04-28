@@ -1,3 +1,5 @@
+import './style.css';
+import { themes } from '@storybook/theming';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -7,9 +9,7 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  options: {
-    storySort: {
-      order: ['Foundry VTT' ['Beyond 20 Installation', 'Adding Items & Custom Items']]
-    }
+  docs: {
+    theme: themes.dark
   }
 }

@@ -1,0 +1,8 @@
+html, body {
+    background-color: black;
+    color: white;
+}
+
+body.sb-show-main {
+    overflow-x: hidden;
+}
