@@ -1,5 +1,24 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
+import CombatHit from './assets/combatHit.png';
+import RollDamageFoundry from './assets/rollDamageFoundry.png';
+import RollDamageDnDBeyond from './assets/rollDamageDndBeyond.png';
+import Arrows from './assets/arrows.png';
+import SpellCast from './assets/spellCast.png';
+import SpellCastFoundry from './assets/spellCastFoundry.png';
+import TemplateTool from './assets/templateTool.png';
+import TemplateToolUsing from './assets/templateToolUsing.png';
+import TemplateToolUsed from './assets/templateToolUsed.png';
+import AbilityExample from './assets/abilityExample.png';
+import AbilitySidebar from './assets/abilitySidebar.png';
+import AbilitySidebarFoundry from './assets/abilitySidebarFoundry.png';
+import AbilityExampleMarked from './assets/abilityExampleMarked.png';
+import Conditions from './assets/conditions.png';
+import ConditionsSidebar from './assets/conditionsSidebar.png';
+import ConditionsSidebarSelected from './assets/conditionsSidebarSelected.png';
+import ConditionsFoundry from './assets/conditionsFoundry.png';
+import ConditionsFoundryIcon from './assets/conditionsFoundryIcon.png';
+
 import "./style.css";
 
 <Meta title="Foundry VTT/Combat" />
@@ -8,34 +27,76 @@ import "./style.css";
 
 ### Attacking with Weapons Spells and Abilities
 
-To attack with a weapon
+## To attack with a weapon
  - Make sure you have the weapon equipped and go to the actions tab
  - Click the Hit/DC column to roll for Hit
+
+<img src={CombatHit}/>
+
  - If you hit you can either click "Roll Damage" in FoundryVTT or click the Damage column in DnDBeyond
     - Note that if you click in FoundryVTT nothing will happen in DnDBeyond
+
+<img src={RollDamageFoundry}/>
+<img src={RollDamageDnDBeyond}/>
+
  - If you miss, unlucky, try next time!
  - **Don't forget to reduce any ammo you may have used!**
 
-To attack with a spell
+<img src={Arrows}/>
+
+## To attack with a spell
  - Click the spells tab in DnDBeyond
  - Click "Cast" and the spell will appear in FoundryVTT
+
+<img src={SpellCast}/>
+<img src={SpellCastFoundry}/>
+
  - If the spell requires a template (eg. it fires in a cone) use the templates tool
     - Then select the tool you require
-    - And place it on the map
+
+<img src={TemplateTool}/>
+
+   - And place it on the map
+
+<img src={TemplateToolUsing}/>
+<img src={TemplateToolUsed}/>
+
  - **Don't forget to click the spell slot level that you have used!**
 
-To use an ability
+## To use an ability
 
  - Some actions - such as barbarian's rage or paladin's lay on hands - do not count as weapons or spells
  - To use these simply declare in game that you are using that ability and click the text on your character sheet
- - This opens up a side bar that allows you to click "Beyond20" and send it across to FoundryVTT's chat
- - Then mark in DnDBeyond that you have used this ability if it is limited use
- - **It is up to you to keep track of the abilities that you use in combat**
 
-### Applying conditions
+<img src={AbilityExample}/>
+
+ - This opens up a side bar that allows you to click "Beyond20" and send it across to FoundryVTT's chat
+
+<img src={AbilitySidebar}/>
+<img src={AbilitySidebarFoundry}/>
+
+ - Then mark in DnDBeyond that you have used this ability if it is limited use
+
+<img src={AbilityExampleMarked}/>
+
+ - **It is up to you to keep track of the abilities that you use in combat if required**
+
+## Applying conditions
 
  - Beyond20 also allows you to sync conditions that your character may endure 
  - In DnDBeyond if you click the "conditions" area of your sheet a side bar should open
+
+<img src={Conditions}/>
+
  - This allows you to toggle any conditions your character has (eg. going prone or being poisoned)
+
+<img src={ConditionsSidebar}/>
+<img src={ConditionsSidebarSelected}/>
+
  - You should see your character update in FoundryVTT and the correct icon be applied to the token
+
+<img src={ConditionsFoundryIcon}/>
+
  - A chat message is also displayed
+
+<img src={ConditionsFoundry}/>

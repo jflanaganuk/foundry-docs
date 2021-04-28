@@ -1,17 +1,34 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
+import ManageEquipment from './assets/manageEquipment.png';
+import AddItemSidebar from './assets/addItemSidebar.png';
+import AddItemSidebarAdd from './assets/addItemSidebarAdd.png';
+import AddItemSidebarCustom from './assets/addItemSidebarCustom.png';
+import AddItemSidebarCustomUnidentified from './assets/addItemSidebarCustomUnidentified.png';
+import AddItemSidebarCustomUnidentifiedOpen from './assets/addItemSidebarCustomUnidentifiedOpen.png';
+import AddItemSidebarCustomComplete from './assets/addItemSidebarCustomComplete.png';
+
 import "./style.css";
 
 <Meta title="Foundry VTT/Adding Items & Custom Items" />
 
 # Adding Items
 
-### Adding a standard item
+## Adding a standard item
 
  - To add an item to your character click equipment
  - Then click "manage equipment"
+
+<img src={ManageEquipment}/>
+
  - A side bar should open up and a search box appears
+
+<img src={AddItemSidebar}/>
+
  - Search for the item you require and click "add"
+
+<img src={AddItemSidebarAdd}/>
+
  - **Be careful to add the correct rarity of your item, in some cases there can be multiple**
     - Black text is the common variant of the item
     - Green is an uncommon magical variant
@@ -19,18 +36,35 @@ import "./style.css";
     - Purple is an epic magical variant
     - Orange are legendary
 
-### Adding a custom item
+## Adding a custom item
 
  - If the item you want to add does not exist you should still add it to your character sheet!
  - **Custom items can arguably be MORE important than regular items as they literally exist specfically for the campaign you are playing!!!**
  - To add a custom item click equipment
+
+<img src={ManageEquipment}/>
+
  - A side bar should open up with the search box
+
+<img src={AddItemSidebar}/>
+
  - However, this time click "Custom items" and open it up
  - Any custom items you have previously made will be here, otherwise it may be blank
+
+<img src={AddItemSidebarCustom}/>
+
  - Click "+ Add Custom Item"
  - An "Unidentified Item" is made automatically
+
+<img src={AddItemSidebarCustomUnidentified}/>
+
  - This obviously isn't any good, so click on the item that was just made
  - The side bar will change to an item view, click "Edit" near the top
+
+<img src={AddItemSidebarCustomUnidentifiedOpen}/>
+
  - You can now edit the name of the item to match what it is that you have found
  - You can add a description to remind you and the DM where this item was located and what you currently know about it
     - **Don't** skip this part!
+
+<img src={AddItemSidebarCustomComplete}/>

@@ -1,16 +1,38 @@
 import { Meta } from '@storybook/addon-docs/blocks';
 
+import Health from './assets/health.png';
+import HealthFoundry from './assets/healthFoundry.png';
+import HealthTemp from './assets/healthTemp.png';
+import HealthPet from './assets/healthPet.png';
+import HealthPetFoundry from './assets/healthPetFoundry.png';
+import HealthDeath from './assets/healthDeath.png';
+import HealthDeathMode from './assets/healthDeathMode.png';
+
 import "./style.css";
 
 <Meta title="Foundry VTT/Health and Temp Health" />
 
 # Health
 
-### Changing health and temp health
+## Changing health and temp health
 
  - Beyond20 now allows you to sync your character's health in FoundryVTT with DnDBeyond
  - If you followed the install steps above this should already be working for you
  - Simply change your character's health in DnDBeyond and your token should update accordingly
+
+<img src={Health} />
+<img src={HealthFoundry} />
+
  - This also works with temp health (remember to minus from this pool first when you take damage)
+
+<img src={HealthTemp} />
+
  - It should also work for pets as long as you edit the health from your "Extras" tab
+
+<img src={HealthPet} />
+<img src={HealthPetFoundry} />
+
  - If you are unfortunate and end up in death saving throw mode, use the DnDBeyond interface to resolve them on your turns
+
+<img src={HealthDeath} />
+<img src={HealthDeathMode} />
