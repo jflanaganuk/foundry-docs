@@ -1,10 +1,10 @@
 // .storybook/manager.js
 
 import { addons } from '@storybook/addons';
-import { themes } from '@storybook/theming';
+import FoundryTheme from './foundry-theme';
 
 addons.setConfig({
-  theme: themes.dark,
+  theme: FoundryTheme,
   showPanel: false,
   isToolshown: false
 });

@@ -6,3 +6,31 @@ html, body {
 body.sb-show-main {
     overflow-x: hidden;
 }
+
+h6.sbdocs {
+    color: #888;
+}
+
+/* Add the below to the index.html 
+
+div.sidebar-header a {
+    display: flex;
+    align-items: center;
+}
+
+div.os-padding div.sidebar-header a img {
+    width: 4rem;
+}
+.css-l8z9zc {
+    width: 1rem;
+}
+
+div.sidebar-header a::after {
+    content: "FoundryVTT Documentation"
+}
+
+div.sidebar-header img {
+    width: 4rem;
+}
+
+*/
